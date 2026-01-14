@@ -99,9 +99,9 @@ def visualize_graph(graph, train_types, shortest_path=[]):
         for neighbor, weight in edges.items():
             label = f"{weight}h ({train_types[(node, neighbor)]})"
             if node in shortest_path and neighbor in shortest_path and abs(shortest_path.index(node) - shortest_path.index(neighbor)) == 1:
-                g.edge(node, neighbor, label=label, color='red', penwidth='2', fontsize='10')
+                g.edge(node, neighbor, label=label, color='red', penwidth='2', fontsize='10', arrowhead='normal')
             else:
-                g.edge(node, neighbor, label=label, color='gray', penwidth='1', fontsize='8')
+                g.edge(node, neighbor, label=label, color='gray', penwidth='1', fontsize='8',arrowhead='normal')
 
     g.render(view=True)
 
@@ -162,7 +162,7 @@ def animate_dijkstra(graph, shortest_path, steps):
     # Change color of path node labels to white (no new labels drawn)
     for node in shortest_path:
         if node in labels:
-            labels[node].set_color('white')
+            labels[node].set_color('black')
             labels[node].set_fontweight('bold')
             labels[node].set_zorder(10)
 
