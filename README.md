@@ -21,4 +21,4 @@ Here is an example of the full rail network graph highlighting the shortest path
 ![Example Rail Network](ExamplePDF.png)
 
 Install dependencies:
-    pip install graphviz networkx matplotlib
+pip install graphviz networkx matplotlib
