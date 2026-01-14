@@ -14,6 +14,11 @@ It includes:
 - Animate visited nodes to show how Dijkstra’s algorithm explores the network.
 - Fully CSV-driven graph makes it easy to expand with real or synthetic data.
 
----
+## Example Output
+
+Here is an example of the full rail network graph highlighting the shortest path:
+
+![Example Rail Network](ExamplePDF.png)
+
 Install dependencies:
     pip install graphviz networkx matplotlib
