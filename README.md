@@ -1,4 +1,4 @@
-# Europe Rail Pathfinder
+# Railway Pathfinder
 
 This project demonstrates **Dijkstra's shortest path algorithm** on a European rail network.  
 It includes:
